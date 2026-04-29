@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.bundle
+*.ipa
+*.apk
+
+# Metro
+.metro-health-check*
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.pnpm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
