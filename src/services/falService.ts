@@ -36,14 +36,13 @@ export const generateDesign = async (imageInput: string, prompt: string): Promis
         }
 
         const response = await axios.post<FalResponse>(
-            'https://fal.run/fal-ai/flux-2/flash/edit',
+            'https://fal.run/fal-ai/flux-pro',
             {
-                image_urls: [finalImageSource],
-                prompt: englishPrompt + ", Ultra photorealistic 8K interior render, hyper-detailed, physically based rendering (PBR), ray tracing, global illumination, cinematic lighting, soft natural shadows, real-world material textures, ultra high resolution 7680x4320, DSLR photography look, 35mm lens, depth of field, HDR, sharp focus, realistic light bounce, volumetric light, high dynamic range, realistic reflections, micro surface details, texture fidelity, architectural visualization quality, professional interior photography, premium rendering, Octane render quality, Unreal Engine 5 quality, extreme realism, no CGI look cinematic camera movement, interior architectural photography, natural window light, soft shadow gradients, balanced exposure, realistic white balance, professional color grading, depth layering, foreground framing, AVOID: low resolution, blurry, flat lighting, bad shadows, unrealistic materials, cartoonish, CGI, 3D render look, oversaturated, distorted perspective, noisy texture, plastic surfaces, bad proportions, unrealistic reflections.",
+                image_url: finalImageSource,
+                prompt: englishPrompt + ", professional interior design, highly detailed, photorealistic, architectural photography, 8k",
                 sync_mode: true,
-                guidance_scale: 2.5,
                 num_images: 1,
-                enable_prompt_expansion: false,
+                guidance_scale: 9.0, // Daha yüksek değer = Prompta daha çok sadakat
                 output_format: "jpeg"
             },
             {

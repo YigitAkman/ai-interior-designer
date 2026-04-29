@@ -8,6 +8,7 @@ import {
   doc, 
   Timestamp 
 } from 'firebase/firestore';
+import { Platform } from 'react-native';
 import { 
   documentDirectory, 
   EncodingType, 
@@ -49,6 +50,11 @@ const withTimeout = <T>(promise: Promise<T>, ms: number = 30000): Promise<T> =>
  */
 const saveToInternalStorage = async (uri: string, type: 'input' | 'output'): Promise<string> => {
   try {
+    // Web platformunda yerel dosya sistemi erişimi kısıtlıdır, bu adımı atla
+    if (Platform.OS === 'web') {
+      return uri;
+    }
+
     const dir = `${documentDirectory}designs/`;
     
     // Klasör yoksa oluştur
