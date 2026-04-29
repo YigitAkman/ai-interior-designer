@@ -7,22 +7,22 @@ Akıllı İç Mimar, kullanıcıların oda fotoğrafı veya metin prompt’u ile
 Gerçek oda fotoğrafları, seçilen stil ve prompt doğrultusunda AI destekli image-to-image dönüşüm akışıyla yeniden tasarlanabilir.
 
 <p align="center">
-  <img src="assets/screens/before-after-slider.png" width="280" alt="Before After Slider" />
-  <img src="assets/screens/after-result.png" width="280" alt="AI Interior Result" />
+  <img src="assets/screens/home-dark.jpeg" width="220" alt="Home Dark Mode" />
+  <img src="assets/screens/home-light.jpeg" width="220" alt="Home Light Mode" />
 </p>
 
 ## 📱 Uygulama Önizleme
 
 <p align="center">
-  <img src="assets/screens/login.png" width="220" alt="Login Screen" />
-  <img src="assets/screens/register.png" width="220" alt="Register Screen" />
-  <img src="assets/screens/home-light.png" width="220" alt="Home Light Mode" />
+  <img src="assets/screens/login.jpeg" width="220" alt="Login Screen" />
+  <img src="assets/screens/register.jpeg" width="220" alt="Register Screen" />
+  <img src="assets/screens/forgot-password.jpeg" width="220" alt="Forgot Password Screen" />
 </p>
 
 <p align="center">
-  <img src="assets/screens/home-dark.png" width="220" alt="Home Dark Mode" />
-  <img src="assets/screens/history.png" width="220" alt="Design History" />
-  <img src="assets/screens/settings-dark.png" width="220" alt="Settings Dark Mode" />
+  <img src="assets/screens/history.jpeg" width="220" alt="Design History" />
+  <img src="assets/screens/settings-dark.jpeg" width="220" alt="Settings Dark Mode" />
+  <img src="assets/screens/settings-light.jpeg" width="220" alt="Settings Light Mode" />
 </p>
 
 ## 🔄 Önce / Sonra Karşılaştırma
@@ -31,7 +31,7 @@ Uygulama, yüklenen gerçek oda fotoğrafı ile AI tarafından oluşturulan yeni
 
 | Öncesi | Karşılaştırma | Sonrası |
 |--------|---------------|---------|
-| <img src="assets/screens/before.png" width="240" alt="Before Room" /> | <img src="assets/screens/before-after-slider.png" width="240" alt="Before After Comparison" /> | <img src="assets/screens/after.png" width="240" alt="After Room" /> |
+| <img src="assets/screens/before.jpeg" width="240" alt="Before Room" /> | <img src="assets/screens/before-after-slider.jpeg" width="240" alt="Before After Comparison" /> | <img src="assets/screens/after.jpeg" width="240" alt="After Room" /> |
 
 ## Problem
 
