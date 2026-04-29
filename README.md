@@ -2,6 +2,37 @@
 
 Akıllı İç Mimar, kullanıcıların oda fotoğrafı veya metin prompt’u ile yapay zekâ destekli iç mekân tasarımları üretmesini sağlayan Expo / React Native tabanlı bir mobil uygulamadır. Uygulama, kimlik doğrulama, stil seçimi, tasarım geçmişi ve cihazda kayıt akışıyla AI çıktısını kullanılabilir bir ürün deneyimine dönüştürür.
 
+## ✨ AI Interior Transformation
+
+Gerçek oda fotoğrafları, seçilen stil ve prompt doğrultusunda AI destekli image-to-image dönüşüm akışıyla yeniden tasarlanabilir.
+
+<p align="center">
+  <img src="assets/screens/before-after-slider.png" width="280" alt="Before After Slider" />
+  <img src="assets/screens/after-result.png" width="280" alt="AI Interior Result" />
+</p>
+
+## 📱 Uygulama Önizleme
+
+<p align="center">
+  <img src="assets/screens/login.png" width="220" alt="Login Screen" />
+  <img src="assets/screens/register.png" width="220" alt="Register Screen" />
+  <img src="assets/screens/home-light.png" width="220" alt="Home Light Mode" />
+</p>
+
+<p align="center">
+  <img src="assets/screens/home-dark.png" width="220" alt="Home Dark Mode" />
+  <img src="assets/screens/history.png" width="220" alt="Design History" />
+  <img src="assets/screens/settings-dark.png" width="220" alt="Settings Dark Mode" />
+</p>
+
+## 🔄 Önce / Sonra Karşılaştırma
+
+Uygulama, yüklenen gerçek oda fotoğrafı ile AI tarafından oluşturulan yeni tasarımı aynı ekranda karşılaştırmayı sağlar.
+
+| Öncesi | Karşılaştırma | Sonrası |
+|--------|---------------|---------|
+| <img src="assets/screens/before.png" width="240" alt="Before Room" /> | <img src="assets/screens/before-after-slider.png" width="240" alt="Before After Comparison" /> | <img src="assets/screens/after.png" width="240" alt="After Room" /> |
+
 ## Problem
 
 İç mekân tasarımı çoğu kullanıcı için pahalı, zaman alan ve karar vermesi zor bir süreçtir. Bir odanın farklı stillerde nasıl görüneceğini önceden hayal etmek kolay değildir. Profesyonel tasarım desteği her zaman erişilebilir değildir. AI görsel üretimi tek başına yeterli olmaz; kullanıcı hesabı, geçmiş yönetimi ve mobil kullanım akışı olmadan pratik bir ürün deneyimi sunmaz.
@@ -71,6 +102,40 @@ Akıllı İç Mimar, bu süreci mobil cihaz üzerinden hızlı ve erişilebilir 
 5. Sonuç görüntülenir, gerekirse önce / sonra karşılaştırılır.
 6. Tasarım Firestore’a kaydedilir ve daha sonra geçmişten yeniden açılabilir.
 
+## Ekranlar
+
+### 🔐 Kimlik Doğrulama
+
+<p align="center">
+  <img src="assets/screens/login.jpeg" width="240" alt="Login Screen" />
+  <img src="assets/screens/register.jpeg" width="240" alt="Register Screen" />
+  <img src="assets/screens/forgot-password.jpeg" width="240" alt="Forgot Password Screen" />
+</p>
+
+### 🎨 Stil Seçimi ve Prompt Akışı
+
+<p align="center">
+  <img src="assets/screens/home-light.jpeg" width="240" alt="Style Selection Light Mode" />
+  <img src="assets/screens/home-dark.jpeg" width="240" alt="Style Selection Dark Mode" />
+  <img src="assets/screens/prompt-flow.jpeg" width="240" alt="Prompt Flow" />
+</p>
+
+### 🖼️ Tasarım Sonucu
+
+<p align="center">
+  <img src="assets/screens/before.jpeg" width="240" alt="Original Room" />
+  <img src="assets/screens/before-after-slider.jpeg" width="240" alt="Before After Slider" />
+  <img src="assets/screens/after.jpeg" width="240" alt="Generated Interior" />
+</p>
+
+### 📂 Tasarım Geçmişi ve Ayarlar
+
+<p align="center">
+  <img src="assets/screens/history.jpeg" width="240" alt="Design History" />
+  <img src="assets/screens/settings-light.jpeg" width="240" alt="Settings Light Mode" />
+  <img src="assets/screens/settings-dark.jpeg" width="240" alt="Settings Dark Mode" />
+</p>
+
 ## Kurulum
 
 1. Bağımlılıkları yükleyin:
@@ -98,9 +163,11 @@ npm run web
 Projeyi yerel ortamınızda çalıştırmak için gerekli API anahtarlarını tanımlamanız gerekmektedir. 
 
 1. Proje kök dizininde `.env.example` dosyasını kopyalayarak `.env` adında yeni bir dosya oluşturun:
+
    ```bash
    cp .env.example .env
    ```
+
 2. Oluşturduğunuz `.env` dosyası içerisindeki değişkenleri kendi Firebase ve Fal.ai bilgilerinizle doldurun.
 
 > [!WARNING]
@@ -138,6 +205,28 @@ Uygulama, kullanıcı kimlik doğrulama ve veri saklama için Firebase kullanır
 │  │  └─ uploadService.ts
 │  └─ utils/
 └─ assets/
+```
+
+## Görsel Dosya Yapısı
+
+README içindeki görseller için önerilen klasör yapısı:
+
+```text
+assets/
+└─ screens/
+   ├─ login.png
+   ├─ register.png
+   ├─ forgot-password.png
+   ├─ home-light.png
+   ├─ home-dark.png
+   ├─ prompt-flow.png
+   ├─ before.png
+   ├─ before-after-slider.png
+   ├─ after.png
+   ├─ after-result.png
+   ├─ history.png
+   ├─ settings-light.png
+   └─ settings-dark.png
 ```
 
 ## Roadmap
