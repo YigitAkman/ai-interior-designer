@@ -102,40 +102,6 @@ Akıllı İç Mimar, bu süreci mobil cihaz üzerinden hızlı ve erişilebilir 
 5. Sonuç görüntülenir, gerekirse önce / sonra karşılaştırılır.
 6. Tasarım Firestore’a kaydedilir ve daha sonra geçmişten yeniden açılabilir.
 
-## Ekranlar
-
-### 🔐 Kimlik Doğrulama
-
-<p align="center">
-  <img src="assets/screens/login.jpeg" width="240" alt="Login Screen" />
-  <img src="assets/screens/register.jpeg" width="240" alt="Register Screen" />
-  <img src="assets/screens/forgot-password.jpeg" width="240" alt="Forgot Password Screen" />
-</p>
-
-### 🎨 Stil Seçimi ve Prompt Akışı
-
-<p align="center">
-  <img src="assets/screens/home-light.jpeg" width="240" alt="Style Selection Light Mode" />
-  <img src="assets/screens/home-dark.jpeg" width="240" alt="Style Selection Dark Mode" />
-  <img src="assets/screens/prompt-flow.jpeg" width="240" alt="Prompt Flow" />
-</p>
-
-### 🖼️ Tasarım Sonucu
-
-<p align="center">
-  <img src="assets/screens/before.jpeg" width="240" alt="Original Room" />
-  <img src="assets/screens/before-after-slider.jpeg" width="240" alt="Before After Slider" />
-  <img src="assets/screens/after.jpeg" width="240" alt="Generated Interior" />
-</p>
-
-### 📂 Tasarım Geçmişi ve Ayarlar
-
-<p align="center">
-  <img src="assets/screens/history.jpeg" width="240" alt="Design History" />
-  <img src="assets/screens/settings-light.jpeg" width="240" alt="Settings Light Mode" />
-  <img src="assets/screens/settings-dark.jpeg" width="240" alt="Settings Dark Mode" />
-</p>
-
 ## Kurulum
 
 1. Bağımlılıkları yükleyin:
